@@ -1,3 +1,5 @@
+原本是个企业网站，但是其博客页面甚合我意，所以将其fork并使用其博客模块。
+
 # Universal Theme for Hugo
 
 [![Build Status](https://travis-ci.org/devcows/hugo-universal-theme.svg?branch=master)](https://travis-ci.org/devcows/hugo-universal-theme)
