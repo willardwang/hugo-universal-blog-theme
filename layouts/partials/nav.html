@@ -4,8 +4,8 @@
 
         <div class="container">
             <div class="navbar-header">
-                <a class="navbar-brand home" href="{{ .Site.BaseURL }}">
-                    <img src="{{ .Site.BaseURL }}{{ .Site.Params.logo }}" alt="{{ .Title }} logo" class="hidden-xs hidden-sm">
+                <a class="navbar-brand home" href="{{ .Site.BaseURL }}" style="padding: 0; position: relative; top: 4px;">
+                    <img src="{{ .Site.BaseURL }}{{ .Site.Params.logo }}" style="width: auto; height: auto; max-width: 100%; max-height: 100%;" alt="{{ .Title }} logo" class="hidden-xs hidden-sm">
                     <img src="{{ .Site.BaseURL }}{{ .Site.Params.logo_small }}" alt="{{ .Title }} logo" class="visible-xs visible-sm">
                     <span class="sr-only">{{ .Title }} - {{ i18n "navHome" }}</span>
                 </a>

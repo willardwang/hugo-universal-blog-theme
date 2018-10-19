@@ -8,3 +8,7 @@
 .box-simple {
   min-height: 230px;
 }
+
+.home-carousel .dark-mask {
+  opacity: 0.8;
+}

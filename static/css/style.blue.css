@@ -306,7 +306,7 @@ ul.list-style-none {
 }
 .navbar ul.nav > li > a {
   text-transform: uppercase;
-  text-decoration: underline;
+  text-decoration: none;
   font-weight: bold;
   letter-spacing: 0.08em;
   border-top: solid 5px transparent;
@@ -1162,6 +1162,8 @@ fieldset[disabled] .btn-template-primary.active {
 .home-carousel .owl-carousel {
   padding-top: 60px;
   padding-bottom: 20px;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 .home-carousel .owl-theme .owl-controls .owl-page span {
   background: #666;
