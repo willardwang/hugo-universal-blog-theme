@@ -5,7 +5,8 @@
   translation: "模板来自"
 
 - id: portedBy
-  translation: "移植到 Hugo 来自"
+  # translation: "移植到 Hugo 来自"
+  translation: "Power by Hugo, Theme "
 
 - id: contactGoTo
   translation: "跳到联系页面"

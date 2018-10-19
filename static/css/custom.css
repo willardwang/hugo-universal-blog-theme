@@ -9,6 +9,20 @@
   min-height: 230px;
 }
 
+/* banner图层的透明度 */
 .home-carousel .dark-mask {
   opacity: 0.8;
+}
+
+/* footer版权区域的高度 */
+#copyright {
+  padding: 10px 0;
+}
+
+/* banner和近期博客模块之间的高度 */
+.bar {
+  padding: 0;
+}
+.heading {
+  margin-bottom: 0; 
 }
