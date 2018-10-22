@@ -26,3 +26,8 @@
 .heading {
   margin-bottom: 0; 
 }
+
+/* list.html和single.html头部的贯穿图片 */
+#heading-breadcrumbs {
+  background: url(../img/texture-green.png) center center repeat;
+}
