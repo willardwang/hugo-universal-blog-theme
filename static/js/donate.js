@@ -125,12 +125,22 @@
       value: function show() {
         if (isShow) return;
         this.modal.classList.add('active');
+        this.modal.querySelector('.donate-modal').classList.add("ready")
+        var m = this.modal
+        setTimeout(function() {
+          m.querySelector('.donate-modal').classList.add("in")
+        }, 0);
         isShow = true;
       }
     }, {
       key: "hide",
       value: function hide() {
         this.modal.classList.remove('active');
+        this.modal.querySelector('.donate-modal').classList.remove('in');
+        var m = this.modal
+        setTimeout(function() {
+          m.querySelector('.donate-modal').classList.remove('ready');
+        }, 300);
         isShow = false;
       }
     }, {
