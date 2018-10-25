@@ -7,10 +7,11 @@
     </div>
 
     <div class="panel-body">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" role="search">
+        <form action="//baidu.com/s" method="get" accept-charset="UTF-8" role="search" target="_blank">
             <div class="input-group">
-                <input type="search" name="q" class="form-control" placeholder="{{ i18n "searchTitle" }}">
-                <input type="hidden" name="sitesearch" value="{{ .Site.BaseURL }}">
+                <input type="search" name="q1" class="form-control" placeholder="{{ i18n "searchTitle" }}">
+                <input type="hidden" name="q6" value="{{ .Site.BaseURL }}">
+                <input type="hidden" name="tn" value="baiduadv">
                 <span class="input-group-btn">
                     <button type="submit" class="btn btn-template-main"><i class="fa fa-search"></i></button>
                 </span>

@@ -40,6 +40,13 @@
   <!-- Custom stylesheet - for your changes -->
   <link href="{{ "css/custom.css" | relURL}}" rel="stylesheet">
 
+  <!-- 打赏 -->
+  {{ if isset .Site.Params "donate" }}
+  {{ if .Site.Params.donate.enable }}
+    <link href="{{ "css/donate.css" | relURL}}" rel="stylesheet">
+  {{ end }}
+  {{ end }}
+
   <!-- Responsivity for older IE -->
   {{ `
     <!--[if lt IE 9]>
