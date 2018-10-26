@@ -41,7 +41,7 @@
   }
 
   var defaults = {
-    title: '如果觉得我的文章对您有用，请随意打赏。您的支持将鼓励我继续创作!',
+    title: '您的支持将鼓励我继续创作!',
     btnText: '打赏支持'
   };
   var bd = document.body;

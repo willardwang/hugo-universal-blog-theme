@@ -1,8 +1,8 @@
 
-{{ if and (gt .WordCount 400 ) (ne .Params.toc "false") }}
-<aside>
+{{ if ne .Params.toc "false" }}
+<aside class="toc affix" data-spy="affix" data-offset-top="120">
     <header>
-    <h2>{{.Title}}</h2>
+    <h2 style="text-align: center;">{{ i18n "toc" }}</h2>
     </header>
     {{.TableOfContents}}
 </aside>

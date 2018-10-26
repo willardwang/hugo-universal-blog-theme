@@ -31,3 +31,41 @@
 #heading-breadcrumbs {
   background: url(../img/texture-green.png) center center repeat;
 }
+
+/* 页内锚点顶部不被nav隐藏 */
+#post-content h1, #post-content h2, #post-content h3, #post-content h4, #post-content h5 {
+  padding-top: 77px;
+  margin-top: -77px;
+}
+
+/* toc */
+#TableOfContents ul{
+  list-style-type: decimal;
+  padding-inline-start: 30px;
+}
+.toc{
+  position: fixed; 
+  max-width: 262px;
+  overflow-y: auto;
+}
+.toc.affix{
+  top: 80px;
+  bottom: 63px;
+}
+.toc.affix-top{
+  top: 220px;
+}
+
+/* sidebar悬浮 */
+.custom-sidebar{
+  position: fixed; 
+  max-width: 262px;
+  overflow-y: auto;
+  bottom: 63px;
+}
+.custom-sidebar.affix{
+  top: 80px;
+}
+.custom-sidebar.affix-top{
+  top: 220px;
+}

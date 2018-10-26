@@ -70,3 +70,6 @@
 
 - id: publishedOn
   translation: "在"
+
+- id: toc
+  translation: "目录"

@@ -69,3 +69,6 @@
 
 - id: publishedOn
   translation: "on"
+
+- id: toc
+  translation: "Table Of Content"
