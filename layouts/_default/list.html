@@ -56,8 +56,23 @@
                                         </p>
                                     </div>
                                     <p class="intro">{{ .Summary }}</p>
-                                    <p class="read-more"><a href="{{ .Permalink }}" class="btn btn-template-main">{{ i18n "continueReading" }}</a>
-                                    </p>
+                                    
+                                    <div class="panel sidebar-menu">
+                                    {{ if isset .Params "tags" }}
+                                    {{ if gt (len .Params.tags) 0 }}
+                                        <div class="panel-body left">
+                                            <ul class="tag-cloud">
+                                                {{ range $name, $items := .Params.tags}}
+                                                <li><a href="{{ $.Site.BaseURL }}tags/{{ $items | urlize | lower }}"><i class="fa fa-tags"></i> {{ $items }}</a>
+                                                </li>
+                                                {{ end}}
+                                            </ul>
+                                        </div>
+                                        <div class="read-more right"><a href="{{ .Permalink }}" class="btn btn-template-main">{{ i18n "continueReading" }}</a>
+                                        </div>
+                                    {{ end }}
+                                    {{ end }}
+                                    </div>
                                 </div>
                             </div>
                         </section>

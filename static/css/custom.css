@@ -1,5 +1,17 @@
 /* your styles go here */
 
+/* footer固定 */
+html,body{
+  height: 100%;
+}
+#all{
+  height: 100%;
+  min-height: 100%;
+}
+#content{
+  min-height: calc(100% - 268px);
+}
+
 .box-image-text .image {
   min-height: 200px;
   max-height: 200px;
@@ -68,4 +80,19 @@
 }
 .custom-sidebar.affix-top{
   top: 220px;
+}
+
+/* list row tag */
+.panel-body.left{
+  width: calc(100% - 84px);
+  float: left;
+}
+.read-more.right{
+  float: right;
+}
+
+/* breadcrumbs字体 */
+#heading-breadcrumbs h1{
+  font-family: cursive;
+  color: #558855;
 }
