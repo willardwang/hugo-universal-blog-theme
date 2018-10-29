@@ -29,21 +29,22 @@
                         <div id="post-content">
                           {{ .Content }}
                         </div>
-                            {{ if isset .Params "tags" }}
-                            {{ if gt (len .Params.tags) 0 }}
-                                <hr style="border-top: 1px solid #acaaaa; margin-top: 28px;"/>
-                                <div class="panel sidebar-menu">
-                                    <div class="panel-body">
-                                        <ul class="tag-cloud">
-                                            {{ range $name, $items := .Params.tags}}
-                                            <li><a href="{{ $.Site.BaseURL }}tags/{{ $items | urlize | lower }}"><i class="fa fa-tags"></i> {{ $items }}</a>
-                                            </li>
-                                            {{ end}}
-                                        </ul>
-                                    </div>
+                        {{ if isset .Params "tags" }}
+                        {{ if gt (len .Params.tags) 0 }}
+                            <hr style="border-top: 1px solid #acaaaa; margin-top: 28px;"/>
+                            <div class="panel sidebar-menu">
+                                <div class="panel-body">
+                                    <ul class="tag-cloud">
+                                        {{ range $name, $items := .Params.tags}}
+                                        <li><a href="{{ $.Site.BaseURL }}tags/{{ $items | urlize | lower }}"><i class="fa fa-tags"></i> {{ $items }}</a>
+                                        </li>
+                                        {{ end}}
+                                    </ul>
                                 </div>
-                            {{ end }}
-                            {{ end }}
+                            </div>
+                        {{ end }}
+                        {{ end }}
+                        {{ partial "donate.html" . }}
                         <!-- /#post-content -->
                         {{ if .Site.DisqusShortname }}
                         <div id="comments">
@@ -74,8 +75,6 @@
                 </div>
                 <!-- /.row -->
                 
-                {{ partial "donate.html" . }}
-               
             </div>
             <!-- /.container -->
         </div>
